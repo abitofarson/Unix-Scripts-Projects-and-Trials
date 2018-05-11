@@ -1,0 +1,65 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2016.11.01 19:49:01 =~=~=~=~=~=~=~=~=~=~=~=
+login as: ewichman
+ewichman@ats-cis.jccc.edu's password: 
+No mail.
+Last login: Tue Oct 25 21:21:42 2016 from 99-198-186-181.mci.googlefiber.net
+
+[ewichman@ats-cis ~]$ csh
+csh command? $ dateecho datesetset d = dat'`date`; echo $d[]5]]
+
+CDT
+csh command? $ set var = tree
+
+csh command? $ echo pear$var
+
+peartree
+csh command? $ echo preaear$var apple$var
+
+peartree appletree
+csh command? $ echo $varhouse
+
+varhouse: Undefined variable.
+csh command? $ echo 'va$'"$var"house
+
+treehouse
+csh command? $ set promopt = '[ ttsccsh %%w %d %m > '
+
+tcsh Nov Tue ats-cis > set prompt = 'tcsh %w %d %M > '
+
+tcsh Nov Tue ats-cis.jccc.edu > set promopt = %set printexitvalue
+
+tcsh Nov Tue ats-cis.jccc.edu > grep per'person' constitution.txt
+
+No person shall be a Senator who shall not have attained to the Age of
+No person held to Service or Labor in one State, under the Laws thereof,
+tcsh Nov Tue ats-cis.jccc.edu > setset printexitvalue
+
+tcsh Nov Tue ats-cis.jccc.edu > grep 'persons0n' constitution.txt
+
+Exit 1
+tcsh Nov Tue ats-cis.jccc.edu > grep 'person' consitution.txt
+
+grep: consitution.txt: No such file or directory
+Exit 2
+tcsh Nov Tue ats-cis.jccc.edu > pre grep 'preerson' consittitution.txt
+
+No person shall be a Senator who shall not have attained to the Age of
+No person held to Service or Labor in one State, under the Laws thereof,
+tcsh Nov Tue ats-cis.jccc.edu > req 7 1
+
+
+-----------------
+Tue Nov  1 20:01:12 CDT 2016
+/home/students/ewichman
+R07_001_587259
+-----------------
+
+tcsh Nov Tue ats-cis.jccc.edu > logout
+
+Not a login shell.
+Exit 1
+tcsh Nov Tue ats-cis.jccc.edu > exit
+
+exit
+[ewichman@ats-cis ~]$ exit
+logout
