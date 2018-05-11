@@ -1,0 +1,1023 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2016.10.25 19:31:13 =~=~=~=~=~=~=~=~=~=~=~=
+login as: ewicha man
+ewichman@ats-cis.jccc.edu's password: 
+No mail.
+Last login: Mon Oct 24 18:48:50 2016 from 99-198-186-181.mci.googlefiber.net
+
+[ewichman@ats-cis ~]$ 
+[ewichman@ats-cis ~]$ 
+[ewichman@ats-cis ~]$ 
+[ewichman@ats-cis ~]$ 
+[ewichman@ats-cis ~]$ 
+[ewichman@ats-cis ~]$ ls -l
+total 224
+-rw-r--r--. 1 ewichman students 43608 Sep 13 20:03 5.txt.utf-8
+drwxr-xr-x. 2 ewichman students    16 Sep  6 19:49 bin
+-rw-r--r--. 1 ewichman students  3048 Sep 12 20:46 commands_1.txt
+-rw-r--r--. 1 ewichman students    82 Oct  4 22:12 con_mod.txt
+-rw-r--r--. 1 ewichman students 43608 Sep 13 20:10 constitution.dos
+-rw-r--r--. 1 ewichman students 26851 Sep 20 09:21 constitution.txt
+-rw-r--r--. 1 ewichman students    29 Oct 24 19:58 date.txt
+-rw-------. 1 ewichman students  3798 Oct 18 22:18 dead.letter
+drwxr-xr-x. 2 ewichman students     6 Sep 12 20:55 dir_1
+drwxr-xr-x. 3 ewichman students    31 Sep 13 21:14 dir_2
+drwxr-xr-x. 2 ewichman students     6 Sep 12 20:55 dir_3
+drwxr-xr-x. 3 ewichman students    18 Sep 12 21:02 dir_4
+drwxr-xr-x. 4 ewichman students    30 Sep 13 21:26 dir_5a
+drwxr-xr-x. 2 ewichman students    16 Sep  6 19:59 my_dir
+-rw-r--r--. 1 ewichman students     0 Oct  4 21:47 p4_s1.sed
+-rw-r--r--. 1 ewichman students   303 Oct  4 22:27 p4_sl.sed
+-rwxr-xr-x. 1 ewichman students  1109 Oct 18 22:13 p5_s1.sh
+-rwxr-xr-x. 1 ewichman students  1109 Oct 18 22:13 p5_s1.sh.txt
+drwxr-xr-x. 2 ewichman students    45 Oct 18 21:53 p6_tmp
+-rw-r--r--. 1 ewichman students    82 Oct  4 22:10 p con_mod.txt
+-rw-r--r--. 1 ewichman students   161 Sep 18 20:27 project2
+-rw-r--r--. 1 ewichman students 26851 Sep 20 09:21 project3
+-rw-r--r--. 1 ewichman students  1604 Oct 24 19:09 q
+-rw-r--r--. 1 ewichman students     0 Sep  6 19:51 recovery01
+-rw-r--r--. 1 ewichman students     0 Oct 18 19:58 stupid.txt_bak
+drwxr-xr-x. 2 ewichman students     6 Oct 18 21:44 trash
+-rw-r--r--. 1 ewichman students   105 Aug 30 19:39 tutor
+-rw-r--r--. 1 ewichman students 33257 Aug 30 19:20 vimtutor.txt
+[ewichman@ats-cis ~]$ ls
+5.txt.utf-8     constitution.dos  dir_1  dir_5a     p5_s1.sh       project2    stupid.txt_bak
+bin             constitution.txt  dir_2  my_dir     p5_s1.sh.txt   project3    trash
+commands_1.txt  date.txt          dir_3  p4_s1.sed  p6_tmp         q           tutor
+con_mod.txt     dead.letter       dir_4  p4_sl.sed  p con_mod.txt  recovery01  vimtutor.txt
+[ewichman@ats-cis ~]$ cp constitution.txt consitution.txoriginal constitution.txt
+[ewichman@ats-cis ~]$ ls
+5.txt.utf-8       constitution.txt  dir_3                     p4_s1.sed     p con_mod.txt  stupid.txt_bak
+bin               date.txt          dir_4                     p4_sl.sed     project2       trash
+commands_1.txt    dead.letter       dir_5a                    p5_s1.sh      project3       tutor
+con_mod.txt       dir_1             my_dir                    p5_s1.sh.txt  q              vimtutor.txt
+constitution.dos  dir_2             originalconstitution.txt  p6_tmp        recovery01
+[ewichman@ats-cis ~]$ tcsh
+[ewichman@ats-cis ~]$ ps
+
+  PID TTY          TIME CMD
+28647 pts/7    00:00:00 bash
+29142 pts/7    00:00:00 tcsh
+29213 pts/7    00:00:00 ps
+[ewichman@ats-cis ~]$ setmymy_file = constitution.txt
+
+my_file: Command not found.
+[ewichman@ats-cis ~]$ set my_file = consitutitution.txt
+
+[ewichman@ats-cis ~]$ grep person constuitution.txt 
+
+No person shall be a Senator who shall not have attained to the Age of
+No person held to Service or Labor in one State, under the Laws thereof,
+[ewichman@ats-cis ~]$ complete grep 'p/2/v/'
+
+[ewichman@ats-cis ~]$ complete\
+
+? ^Dgrep'p/2/v/'
+[ewichman@ats-cis ~]$ complete
+
+grep'p/2/v/'
+[ewichman@ats-cis ~]$ grep person constitution.txt
+
+grep: constitution.tx: No such file or directory
+[ewichman@ats-cis ~]$ grep person $my_file 
+
+No person shall be a Senator who shall not have attained to the Age of
+No person held to Service or Labor in one State, under the Laws thereof,
+[ewichman@ats-cis ~]$  reqpreq 7 5
+
+
+-----------------
+Tue Oct 25 19:44:24 CDT 2016
+/home/students/ewichman
+R07_005_587259
+-----------------
+
+[ewichman@ats-cis ~]$ sleep 60
+
+^Z
+Suspended
+[ewichman@ats-cis ~]$ slepep 60
+
+^Z
+Suspended
+[ewichman@ats-cis ~]$ sleep 60 
+
+^Z
+Suspended
+[ewichman@ats-cis ~]$ jobs
+
+[1]    Suspended                     sleep 60
+[2]  - Suspended                     sleep 60
+[3]  + Suspended                     sleep 60
+[ewichman@ats-cis ~]$ %2
+
+sleep 60
+jobs
+^C
+
+[ewichman@ats-cis ~]$ jobs
+
+[1]  - Suspended                     sleep 60
+[3]  + Suspended                     sleep 60
+[ewichman@ats-cis ~]$ slep %jobs %3
+
+Usage: jobs [ -l ].
+[ewichman@ats-cis ~]$ jobs
+
+[1]  - Suspended                     sleep 60
+[3]  + Suspended                     sleep 60
+[ewichman@ats-cis ~]$ %3
+
+sleep 60
+[ewichman@ats-cis ~]$ jobs
+
+[1]  + Suspended                     sleep 60
+[ewichman@ats-cis ~]$ bkg
+
+[1]    sleep 60 &
+[ewichman@ats-cis ~]$ jobs
+
+[1]    Done                          sleep 60
+[ewichman@ats-cis ~]$ 
+
+[ewichman@ats-cis ~]$ 
+
+[ewichman@ats-cis ~]$ 
+
+[ewichman@ats-cis ~]$ 
+
+[ewichman@ats-cis ~]$ clear
+
+[ewichman@ats-cis ~]$ sleep 60
+
+^Z
+Suspended
+[ewichman@ats-cis ~]$ sleep 60
+
+^Z
+Suspended
+[ewichman@ats-cis ~]$ sleep 60
+
+^Z
+Suspended
+[ewichman@ats-cis ~]$ jobs
+
+[1]    Suspended                     sleep 60
+[2]  - Suspended                     sleep 60
+[3]  + Suspended                     sleep 60
+[ewichman@ats-cis ~]$ %2
+
+sleep 60
+^X  ^Z
+Suspended
+[ewichman@ats-cis ~]$ jobs
+
+[1]    Suspended                     sleep 60
+[2]  + Suspended                     sleep 60
+[3]  - Suspended                     sleep 60
+[ewichman@ats-cis ~]$ bg %2
+
+[2]    sleep 60 &
+[ewichman@ats-cis ~]$ jobs
+
+[1]  - Suspended                     sleep 60
+[2]    Done                          sleep 60
+[3]  + Suspended                     sleep 60
+[ewichman@ats-cis ~]$ bg %3
+
+[3]    sleep 60 &
+[ewichman@ats-cis ~]$ jobs
+
+[1]  + Suspended                     sleep 60
+[3]    Done                          sleep 60
+[ewichman@ats-cis ~]$ bg %1
+
+[1]    sleep 60 &
+[ewichman@ats-cis ~]$ bojobs
+
+[1]    Done                          sleep 60
+[ewichman@ats-cis ~]$ lseepsleep 60
+
+^Z
+Suspended
+[ewichman@ats-cis ~]$ sleep 60 
+
+^Z
+Suspended
+[ewichman@ats-cis ~]$ sleep 60 
+
+^Z
+Suspended
+[ewichman@ats-cis ~]$ jobs
+
+[1]    Suspended                     sleep 60
+[2]  - Suspended                     sleep 60
+[3]  + Suspended                     sleep 60
+[ewichman@ats-cis ~]$ bkg %2
+
+[2]    sleep 60 &
+[ewichman@ats-cis ~]$ bjjobs
+
+[1]  - Suspended                     sleep 60
+[2]    Running                       sleep 60
+[3]  + Suspended                     sleep 60
+[ewichman@ats-cis ~]$ jobs
+
+[1]  - Suspended                     sleep 60
+[2]    Running                       sleep 60
+[3]  + Suspended                     sleep 60
+[ewichman@ats-cis ~]$ jobs
+
+[1]  - Suspended                     sleep 60
+[2]    Running                       sleep 60
+[3]  + Suspended                     sleep 60
+[ewichman@ats-cis ~]$ jobs
+
+[1]  - Suspended                     sleep 60
+[2]    Running                       sleep 60
+[3]  + Suspended                     sleep 60
+[ewichman@ats-cis ~]$ jobs
+
+[1]  - Suspended                     sleep 60
+[2]    Done                          sleep 60
+[3]  + Suspended                     sleep 60
+[ewichman@ats-cis ~]$ jobsclear
+
+[ewichman@ats-cis ~]$ sleep 60
+
+^Z
+Suspended
+[ewichman@ats-cis ~]$ sleep 60
+
+^Z
+Suspended
+[ewichman@ats-cis ~]$ sleep 60
+
+^Z
+Suspended
+[ewichman@ats-cis ~]$ jobs
+
+[1]    Suspended                     sleep 60
+[3]    Suspended                     sleep 60
+[4]    Suspended                     sleep 60
+[5]  - Suspended                     sleep 60
+[6]  + Suspended                     sleep 60
+[ewichman@ats-cis ~]$ bg %1
+
+[1]    sleep 60 &
+[ewichman@ats-cis ~]$ bg %3
+
+[3]    sleep 60 &
+[1]    Done                          sleep 60
+[ewichman@ats-cis ~]$ bg %4
+
+[4]    sleep 60 &
+[3]    Done                          sleep 60
+[ewichman@ats-cis ~]$ bg% %5
+
+[5]    sleep 60 &
+[ewichman@ats-cis ~]$ bg %6
+
+[6]    sleep 60 &
+[ewichman@ats-cis ~]$ jobs
+
+[4]    Done                          sleep 60
+[5]  + Running                       sleep 60
+[6]  - Running                       sleep 60
+[ewichman@ats-cis ~]$ jobs
+
+[5]  + Done                          sleep 60
+[6]  + Done                          sleep 60
+[ewichman@ats-cis ~]$ bjobs
+
+[ewichman@ats-cis ~]$ clear
+
+[ewichman@ats-cis ~]$ slepeep 60
+
+^Z
+Suspended
+[ewichman@ats-cis ~]$ sleep 60
+
+^Z
+Suspended
+[ewichman@ats-cis ~]$ sleep 60
+
+^Z
+Suspended
+[ewichman@ats-cis ~]$ jobs
+
+[1]    Suspended                     sleep 60
+[2]  - Suspended                     sleep 60
+[3]  + Suspended                     sleep 60
+[ewichman@ats-cis ~]$ bg %2
+
+[2]    sleep 60 &
+[ewichman@ats-cis ~]$ jobs
+
+[1]  - Suspended                     sleep 60
+[2]    Running                       sleep 60
+[3]  + Suspended                     sleep 60
+[ewichman@ats-cis ~]$ jobs
+
+[1]  - Suspended                     sleep 60
+[2]    Done                          sleep 60
+[3]  + Suspended                     sleep 60
+[ewichman@ats-cis ~]$ req 7 4
+
+
+-----------------
+Tue Oct 25 19:52:51 CDT 2016
+/home/students/ewichman
+R07_004_587259
+-----------------
+
+[ewichman@ats-cis ~]$ aliasalias precmd "- -line above the command--"
+
+-: Command not found.
+[ewichman@ats-cis ~]$ alisas precmdps
+
+  PID TTY          TIME CMD
+28647 pts/7    00:00:00 bash
+29142 pts/7    00:00:00 tcsh
+29870 pts/7    00:00:00 sleep
+29872 pts/7    00:00:00 sleep
+30049 pts/7    00:00:00 ps
+-: Command not found.
+[ewichman@ats-cis ~]$ alias precmdset precmd
+
+-: Command not found.
+[ewichman@ats-cis ~]$ alias precmd "- - line aboutve the command- - :
+
+Unmatched ".
+-: Command not found.
+[ewichman@ats-cis ~]$ 
+
+-: Command not found.
+[ewichman@ats-cis ~]$ 
+
+-: Command not found.
+[ewichman@ats-cis ~]$ ununalias precmd
+
+[ewichman@ats-cis ~]$ 
+
+[ewichman@ats-cis ~]$ 
+
+[ewichman@ats-cis ~]$ 
+
+[ewichman@ats-cis ~]$ 
+
+[ewichman@ats-cis ~]$ alias precmd '- - line above the command- -'
+
+-: Command not found.
+[ewichman@ats-cis ~]$ 
+
+-: Command not found.
+[ewichman@ats-cis ~]$ 
+
+-: Command not found.
+[ewichman@ats-cis ~]$ 
+
+-: Command not found.
+[ewichman@ats-cis ~]$ 
+
+-: Command not found.
+[ewichman@ats-cis ~]$ 
+
+-: Command not found.
+[ewichman@ats-cis ~]$ 
+
+-: Command not found.
+[ewichman@ats-cis ~]$ unsenalias precmd
+
+[ewichman@ats-cis ~]$ 
+
+[ewichman@ats-cis ~]$ 
+
+[ewichman@ats-cis ~]$ 
+
+[ewichman@ats-cis ~]$ alias precmd - - line above the command- - 
+
+-: Command not found.
+[ewichman@ats-cis ~]$ un
+
+-: Command not found.
+[ewichman@ats-cis ~]$ 
+
+-: Command not found.
+[ewichman@ats-cis ~]$ unalisasas precmd
+
+[ewichman@ats-cis ~]$ alias precmd --lineab above the command--
+
+--line: Command not found.
+[ewichman@ats-cis ~]$ 
+
+--line: Command not found.
+[ewichman@ats-cis ~]$ 
+
+--line: Command not found.
+[ewichman@ats-cis ~]$ 
+
+--line: Command not found.
+[ewichman@ats-cis ~]$ unalias precmd
+
+[ewichman@ats-cis ~]$ 
+
+[ewichman@ats-cis ~]$ 
+
+[ewichman@ats-cis ~]$ alias precmd echo --line above the command--
+
+--line above the command--
+[ewichman@ats-cis ~]$ 
+
+--line above the command--
+[ewichman@ats-cis ~]$ 
+
+--line above the command--
+[ewichman@ats-cis ~]$ 
+
+--line above the command--
+[ewichman@ats-cis ~]$ requ 7 3
+
+
+-----------------
+Tue Oct 25 19:59:44 CDT 2016
+/home/students/ewichman
+R07_003_587259
+-----------------
+
+--line above the command--
+[ewichman@ats-cis ~]$ history
+
+     118:53set prompt = "csh command/? $\"
+     218:54set prompt = "csh command? $\"
+     318:57setenv PROMPT = "csh command? $ "
+     419:02cat .cshrc
+     519:02cat.tcshrc
+     619:03cat .tcshrc
+     719:04find .tcshrc
+     819:04kill 29266
+     919:04kill 29349
+    1019:10csh
+    1119:12vim /etc/csh.login
+    1219:16source .login
+    1319:16source /etc/sch.login
+    1419:16source /etc/csh.login
+    1519:17vim /etc/csh.sdhrc
+    1619:17vim /etc/csh.cshrc
+    1719:19chmod +w /etc/csh.cshrc
+    1819:22setenv PROMPT "csh command? $ "
+    1919:23set prompt = "csh command? $ "
+    2019:23sh
+    2119:23req 6 1
+    2219:23echo I will ask in class about this one
+    2319:25history 35
+    2419:26history pwd
+    2519:26history -h
+    2619:28history ps
+    2719:28who
+    2819:28sleep 5
+    3119:29req 6 2
+    3219:32dirs
+    3319:36pushd .
+    3419:38alias cdr 'pushd .; cd ~'
+    3519:39cd ~
+    3619:40cd dir
+    3719:40cd dir_1
+    3819:40popd
+    3919:40cdr
+    4019:40pwd
+    4119:41req 6 3
+    4219:43sleep 30
+    4519:43req 6 4
+    4619:46ls
+    4719:46ls t*
+    4819:48set glob
+    4919:49set globbing
+    5019:53set filec
+    5119:55set noglob
+    5219:55unset glob
+    5319:55unset noglob
+    5419:55ls con*
+    5519:55req 6 5
+    5619:56date > ! date.txt
+    5719:57rm date.txt
+    5919:59set noclobber
+    6020:00date > date.txt
+    6120:00cat date.txt
+    6220:00req 6 6
+    6320:00exit
+    6420:01logout
+    6619:38my_file = constitution.txt
+    6719:39set my_file = constitution.txt
+    6819:40grep person constitution.txt
+    6919:42complete grep 'p/2/v/'
+    7119:43complete
+    7219:43grep person constitution.tx
+    7319:44grep person $my_file
+    7419:44req 7 5
+    8119:46jobs %3
+    8319:46%3
+    8519:46bg
+    9219:47%2
+   11519:50bg %1
+   11619:50bg %3
+   11719:50bg %4
+   11819:50bg %5
+   11919:50bg %6
+   12319:51clear
+   12619:51sleep 60
+   12819:52bg %2
+   13019:52jobs
+   13119:52req 7 4
+   13219:54alias precmd "- -line above the command--"
+   13319:55ps
+   13419:55set precmd
+   13519:55alias precmd "- -line above the command- -:
+   13719:56alias precmd '- -line above the command- -'
+   13919:58alias precmd - -line above the command- -
+   14119:58alias precmd --line above the command--
+   14219:59unalias precmd
+   14319:59alias precmd echo --line above the command--
+   14419:59req 7 3
+   14520:00history
+--line above the command--
+[ewichman@ats-cis ~]$ history | tail
+
+   13419:55set precmd
+   13519:55alias precmd "- -line above the command- -:
+   13719:56alias precmd '- -line above the command- -'
+   13919:58alias precmd - -line above the command- -
+   14119:58alias precmd --line above the command--
+   14219:59unalias precmd
+   14319:59alias precmd echo --line above the command--
+   14419:59req 7 3
+   14520:00history
+   14620:00history | tail
+--line above the command--
+[ewichman@ats-cis ~]$ history 10
+
+   13519:55alias precmd "- -line above the command- -:
+   13719:56alias precmd '- -line above the command- -'
+   13919:58alias precmd - -line above the command- -
+   14119:58alias precmd --line above the command--
+   14219:59unalias precmd
+   14319:59alias precmd echo --line above the command--
+   14419:59req 7 3
+   14520:00history
+   14620:00history | tail
+   14720:00history 10
+--line above the command--
+[ewichman@ats-cis ~]$ unsalias precmd
+
+[ewichman@ats-cis ~]$ 
+
+[ewichman@ats-cis ~]$ 
+
+[ewichman@ats-cis ~]$ 
+
+[ewichman@ats-cis ~]$ history
+
+     118:53set prompt = "csh command/? $\"
+     218:54set prompt = "csh command? $\"
+     318:57setenv PROMPT = "csh command? $ "
+     419:02cat .cshrc
+     519:02cat.tcshrc
+     619:03cat .tcshrc
+     719:04find .tcshrc
+     819:04kill 29266
+     919:04kill 29349
+    1019:10csh
+    1119:12vim /etc/csh.login
+    1219:16source .login
+    1319:16source /etc/sch.login
+    1419:16source /etc/csh.login
+    1519:17vim /etc/csh.sdhrc
+    1619:17vim /etc/csh.cshrc
+    1719:19chmod +w /etc/csh.cshrc
+    1819:22setenv PROMPT "csh command? $ "
+    1919:23set prompt = "csh command? $ "
+    2019:23sh
+    2119:23req 6 1
+    2219:23echo I will ask in class about this one
+    2319:25history 35
+    2419:26history pwd
+    2519:26history -h
+    2619:28history ps
+    2719:28who
+    2819:28sleep 5
+    3119:29req 6 2
+    3219:32dirs
+    3319:36pushd .
+    3419:38alias cdr 'pushd .; cd ~'
+    3519:39cd ~
+    3619:40cd dir
+    3719:40cd dir_1
+    3819:40popd
+    3919:40cdr
+    4019:40pwd
+    4119:41req 6 3
+    4219:43sleep 30
+    4519:43req 6 4
+    4619:46ls
+    4719:46ls t*
+    4819:48set glob
+    4919:49set globbing
+    5019:53set filec
+    5119:55set noglob
+    5219:55unset glob
+    5319:55unset noglob
+    5419:55ls con*
+    5519:55req 6 5
+    5619:56date > ! date.txt
+    5719:57rm date.txt
+    5919:59set noclobber
+    6020:00date > date.txt
+    6120:00cat date.txt
+    6220:00req 6 6
+    6320:00exit
+    6420:01logout
+    6619:38my_file = constitution.txt
+    6719:39set my_file = constitution.txt
+    6819:40grep person constitution.txt
+    6919:42complete grep 'p/2/v/'
+    7119:43complete
+    7219:43grep person constitution.tx
+    7319:44grep person $my_file
+    7419:44req 7 5
+    8119:46jobs %3
+    8319:46%3
+    8519:46bg
+    9219:47%2
+   11519:50bg %1
+   11619:50bg %3
+   11719:50bg %4
+   11819:50bg %5
+   11919:50bg %6
+   12319:51clear
+   12619:51sleep 60
+   12819:52bg %2
+   13019:52jobs
+   13119:52req 7 4
+   13219:54alias precmd "- -line above the command--"
+   13319:55ps
+   13419:55set precmd
+   13519:55alias precmd "- -line above the command- -:
+   13719:56alias precmd '- -line above the command- -'
+   13919:58alias precmd - -line above the command- -
+   14119:58alias precmd --line above the command--
+   14319:59alias precmd echo --line above the command--
+   14419:59req 7 3
+   14620:00history | tail
+   14720:00history 10
+   14820:00unalias precmd
+   14920:00history
+[ewichman@ats-cis ~]$ history | tail
+
+   13519:55alias precmd "- -line above the command- -:
+   13719:56alias precmd '- -line above the command- -'
+   13919:58alias precmd - -line above the command- -
+   14119:58alias precmd --line above the command--
+   14319:59alias precmd echo --line above the command--
+   14419:59req 7 3
+   14720:00history 10
+   14820:00unalias precmd
+   14920:00history
+   15020:01history | tail
+[ewichman@ats-cis ~]$ history 10
+
+   13519:55alias precmd "- -line above the command- -:
+   13719:56alias precmd '- -line above the command- -'
+   13919:58alias precmd - -line above the command- -
+   14119:58alias precmd --line above the command--
+   14319:59alias precmd echo --line above the command--
+   14419:59req 7 3
+   14820:00unalias precmd
+   14920:00history
+   15020:01history | tail
+   15120:01history 10
+[ewichman@ats-cis ~]$ historiyy -4r 10
+
+   15220:01history -r 10
+   15120:01history 10
+   15020:01history | tail
+   14920:00history
+   14820:00unalias precmd
+   14419:59req 7 3
+   14319:59alias precmd echo --line above the command--
+   14119:58alias precmd --line above the command--
+   13919:58alias precmd - -line above the command- -
+   13719:56alias precmd '- -line above the command- -'
+[ewichman@ats-cis ~]$ set history=5
+
+[ewichman@ats-cis ~]$ history
+
+   15020:01history | tail
+   15120:01history 10
+   15220:01history -r 10
+   15320:02set history=5
+   15420:02history
+[ewichman@ats-cis ~]$ who
+
+bvinson  pts/0        2016-10-24 01:03 (23-255-169-213.mci.googlefiber.net)
+jbisho20 pts/1        2016-10-25 19:21 (172-13-2-22.lightspeed.mssnks.sbcglobal.net)
+kthoma69 pts/2        2016-10-25 16:56 (cpe-24-31-226-13.kc.res.rr.com)
+dagee3   pts/3        2016-10-25 19:30 (rc36103.student.directory.jccc)
+clocke1  pts/4        2016-10-25 17:59 (rc36101.student.directory.jccc)
+dagee3   pts/5        2016-10-25 19:30 (rc36103.student.directory.jccc)
+dcoope22 pts/6        2016-10-25 19:30 (rc36115.student.directory.jccc)
+ewichman pts/7        2016-10-25 19:31 (rc36116.student.directory.jccc)
+cdietz8  pts/8        2016-10-25 19:50 (rc36118.student.directory.jccc)
+cjorgens pts/9        2016-10-25 19:41 (rc36109.student.directory.jccc)
+award47  pts/10       2016-10-25 19:34 (rc36110.student.directory.jccc)
+jfoutts1 pts/11       2016-10-25 19:34 (rc36107.student.directory.jccc)
+jfoutts1 pts/12       2016-10-25 19:34 (rc36107.student.directory.jccc)
+npawarve pts/13       2016-10-25 19:38 (narayana-portable.jccc.wifi)
+jgianni  pts/14       2016-10-25 19:54 (rc36106.student.directory.jccc)
+cdietz8  pts/15       2016-10-25 19:58 (rc36118.student.directory.jccc)
+[ewichman@ats-cis ~]$ date
+
+Tue Oct 25 20:02:58 CDT 2016
+[ewichman@ats-cis ~]$ sleep 10
+
+[ewichman@ats-cis ~]$ ps
+
+  PID TTY          TIME CMD
+28647 pts/7    00:00:00 bash
+29142 pts/7    00:00:00 tcsh
+29870 pts/7    00:00:00 sleep
+29872 pts/7    00:00:00 sleep
+30288 pts/7    00:00:00 ps
+[ewichman@ats-cis ~]$ echo "Hello"
+
+Hello
+[ewichman@ats-cis ~]$ echo "World"
+
+World
+[ewichman@ats-cis ~]$ history
+
+   15720:03sleep 10
+   15820:03ps
+   15920:03echo "Hello"
+   16020:03echo "World"
+   16120:03history
+[ewichman@ats-cis ~]$ !158
+
+ps
+  PID TTY          TIME CMD
+28647 pts/7    00:00:00 bash
+29142 pts/7    00:00:00 tcsh
+29870 pts/7    00:00:00 sleep
+29872 pts/7    00:00:00 sleep
+30293 pts/7    00:00:00 ps
+[ewichman@ats-cis ~]$ echo one towo three
+
+one two three
+[ewichman@ats-cis ~]$ !!:2
+
+two
+two: Command not found.
+[ewichman@ats-cis ~]$ !historyhistory
+
+   16020:03echo "World"
+   16220:03ps
+   16320:04echo one two three
+   16420:04two
+   16520:06history
+[ewichman@ats-cis ~]$ who
+
+bvinson  pts/0        2016-10-24 01:03 (23-255-169-213.mci.googlefiber.net)
+jbisho20 pts/1        2016-10-25 19:21 (172-13-2-22.lightspeed.mssnks.sbcglobal.net)
+kthoma69 pts/2        2016-10-25 16:56 (cpe-24-31-226-13.kc.res.rr.com)
+dagee3   pts/3        2016-10-25 19:30 (rc36103.student.directory.jccc)
+clocke1  pts/4        2016-10-25 17:59 (rc36101.student.directory.jccc)
+dagee3   pts/5        2016-10-25 19:30 (rc36103.student.directory.jccc)
+dcoope22 pts/6        2016-10-25 19:30 (rc36115.student.directory.jccc)
+ewichman pts/7        2016-10-25 19:31 (rc36116.student.directory.jccc)
+cdietz8  pts/8        2016-10-25 19:50 (rc36118.student.directory.jccc)
+cjorgens pts/9        2016-10-25 19:41 (rc36109.student.directory.jccc)
+award47  pts/10       2016-10-25 19:34 (rc36110.student.directory.jccc)
+jfoutts1 pts/11       2016-10-25 19:34 (rc36107.student.directory.jccc)
+jfoutts1 pts/12       2016-10-25 20:07 (rc36107.student.directory.jccc)
+npawarve pts/13       2016-10-25 19:38 (narayana-portable.jccc.wifi)
+jgianni  pts/14       2016-10-25 19:54 (rc36106.student.directory.jccc)
+cdietz8  pts/15       2016-10-25 19:58 (rc36118.student.directory.jccc)
+[ewichman@ats-cis ~]$ date
+
+Tue Oct 25 20:08:10 CDT 2016
+[ewichman@ats-cis ~]$ sleep 10
+
+[ewichman@ats-cis ~]$ ps
+
+  PID TTY          TIME CMD
+28647 pts/7    00:00:00 bash
+29142 pts/7    00:00:00 tcsh
+29870 pts/7    00:00:00 sleep
+29872 pts/7    00:00:00 sleep
+30449 pts/7    00:00:00 ps
+[ewichman@ats-cis ~]$ echo "helloHello"
+
+Hello
+[ewichman@ats-cis ~]$ echo "World"
+
+World
+[ewichman@ats-cis ~]$ history
+
+   16820:08sleep 10
+   16920:08ps
+   17020:08echo "Hello"
+   17120:08echo "World"
+   17220:08history
+[ewichman@ats-cis ~]$ !169
+
+ps
+  PID TTY          TIME CMD
+28647 pts/7    00:00:00 bash
+29142 pts/7    00:00:00 tcsh
+29870 pts/7    00:00:00 sleep
+29872 pts/7    00:00:00 sleep
+30455 pts/7    00:00:00 ps
+[ewichman@ats-cis ~]$ !:echo one two three
+
+one two three
+[ewichman@ats-cis ~]$ !32
+
+2: Event not found.
+[ewichman@ats-cis ~]$ !!:2
+
+two
+two: Command not found.
+[ewichman@ats-cis ~]$ !!:2P
+
+Bad ! arg selector.
+[ewichman@ats-cis ~]$ !!:2
+
+Bad ! arg selector.
+[ewichman@ats-cis ~]$ historyreq 7 2
+
+
+-----------------
+Tue Oct 25 20:10:02 CDT 2016
+/home/students/ewichman
+R07_002_587259
+-----------------
+
+[ewichman@ats-cis ~]$ who
+
+bvinson  pts/0        2016-10-24 01:03 (23-255-169-213.mci.googlefiber.net)
+jbisho20 pts/1        2016-10-25 19:21 (172-13-2-22.lightspeed.mssnks.sbcglobal.net)
+kthoma69 pts/2        2016-10-25 16:56 (cpe-24-31-226-13.kc.res.rr.com)
+dagee3   pts/3        2016-10-25 19:30 (rc36103.student.directory.jccc)
+clocke1  pts/4        2016-10-25 17:59 (rc36101.student.directory.jccc)
+dagee3   pts/5        2016-10-25 19:30 (rc36103.student.directory.jccc)
+dcoope22 pts/6        2016-10-25 19:30 (rc36115.student.directory.jccc)
+ewichman pts/7        2016-10-25 19:31 (rc36116.student.directory.jccc)
+cdietz8  pts/8        2016-10-25 19:50 (rc36118.student.directory.jccc)
+cjorgens pts/9        2016-10-25 19:41 (rc36109.student.directory.jccc)
+award47  pts/10       2016-10-25 19:34 (rc36110.student.directory.jccc)
+jfoutts1 pts/11       2016-10-25 19:34 (rc36107.student.directory.jccc)
+jfoutts1 pts/12       2016-10-25 20:07 (rc36107.student.directory.jccc)
+npawarve pts/13       2016-10-25 19:38 (narayana-portable.jccc.wifi)
+jgianni  pts/14       2016-10-25 19:54 (rc36106.student.directory.jccc)
+cdietz8  pts/15       2016-10-25 19:58 (rc36118.student.directory.jccc)
+[ewichman@ats-cis ~]$ date
+
+Tue Oct 25 20:10:14 CDT 2016
+[ewichman@ats-cis ~]$ sleep 10
+
+[ewichman@ats-cis ~]$ ps
+
+  PID TTY          TIME CMD
+28647 pts/7    00:00:00 bash
+29142 pts/7    00:00:00 tcsh
+29870 pts/7    00:00:00 sleep
+29872 pts/7    00:00:00 sleep
+30535 pts/7    00:00:00 ps
+[ewichman@ats-cis ~]$ echo "Hello"
+
+Hello
+[ewichman@ats-cis ~]$ echo "World"
+
+World
+[ewichman@ats-cis ~]$  history
+
+   18020:10sleep 10
+   18120:10ps
+   18220:10echo "Hello"
+   18320:10echo "World"
+   18420:10history
+[ewichman@ats-cis ~]$ !181
+
+ps
+  PID TTY          TIME CMD
+28647 pts/7    00:00:00 bash
+29142 pts/7    00:00:00 tcsh
+29870 pts/7    00:00:00 sleep
+29872 pts/7    00:00:00 sleep
+30539 pts/7    00:00:00 ps
+[ewichman@ats-cis ~]$ !$:echo on e two three
+
+one two three
+[ewichman@ats-cis ~]$ !:2
+
+two
+two: Command not found.
+[ewichman@ats-cis ~]$ echo !:2
+
+Bad ! arg selector.
+[ewichman@ats-cis ~]$ echo one two three
+
+one two three
+[ewichman@ats-cis ~]$ echo !:2
+
+echo two
+two
+[ewichman@ats-cis ~]$ echo one trwo three
+
+one two three
+[ewichman@ats-cis ~]$ echo echo!!!* four
+
+one two three four
+one: Command not found.
+[ewichman@ats-cis ~]$ echo !* four
+
+echo two three four four
+two three four four
+[ewichman@ats-cis ~]$ re1qqewqq 7 2
+
+
+-----------------
+Tue Oct 25 20:17:17 CDT 2016
+/home/students/ewichman
+R07_002_587259
+-----------------
+
+[ewichman@ats-cis ~]$ date;  = + "'%Z'
+
+date: extra operand %Z
+Try 'date --help' for more information.
+[ewichman@ats-cis ~]$ date +%Z
+
+CDT
+[ewichman@ats-cis ~]$ date
+
+Tue Oct 25 20:23:11 CDT 2016
+[ewichman@ats-cis ~]$ ]date; echo$ $5
+
+Tue Oct 25 20:23:50 CDT 2016
+
+[ewichman@ats-cis ~]$ echo date; $echo $5
+
+date
+
+[ewichman@ats-cis ~]$ echo date
+
+date
+[ewichman@ats-cis ~]$ decho `date`
+
+Tue Oct 25 20:24:21 CDT 2016
+[ewichman@ats-cis ~]$ echo `date`; echo $5
+
+Tue Oct 25 20:24:30 CDT 2016
+
+[ewichman@ats-cis ~]$ set datedate
+
+Tue Oct 25 20:25:14 CDT 2016
+[ewichman@ats-cis ~]$ echo $5
+
+
+[ewichman@ats-cis ~]$ dateecho `date`
+
+Tue Oct 25 20:25:35 CDT 2016
+[ewichman@ats-cis ~]$ echo date
+
+date
+[ewichman@ats-cis ~]$ echo "'date'
+
+date
+[ewichman@ats-cis ~]$ echo "date"
+
+date
+[ewichman@ats-cis ~]$ echo `date`
+
+Tue Oct 25 20:26:02 CDT 2016
+[ewichman@ats-cis ~]$ echo $set datedate = exit
+
+There are suspended jobs.
+[ewichman@ats-cis ~]$ jobs
+
+[1]  - Suspended                     sleep 60
+[3]  + Suspended                     sleep 60
+[ewichman@ats-cis ~]$ bg %1
+
+[1]    sleep 60 &
+[ewichman@ats-cis ~]$ bg %3
+
+[3]    sleep 60 &
+[1]  + Done                          sleep 60
+[ewichman@ats-cis ~]$ jobs
+
+[3]    Done                          sleep 60
+[ewichman@ats-cis ~]$ exit
+
+exit
+[ewichman@ats-cis ~]$ xexit
+logout
