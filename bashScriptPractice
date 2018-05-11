@@ -1,0 +1,88 @@
+#! /bin/bash
+
+if (( $# < 3 ))
+then
+    echo "Run this script with any 3 positional parameters"
+    exit
+fi
+echo "Today's date is: " $(date) # original code lacked the ` ` required 
+				# for command subtitution within the 
+				# echo command. Added ` ` around date
+echo 
+echo "Now is the time for all" # original code lacked the ending double
+				# quote. The ending double quote was 
+				# added to ensure the echo displays the
+				# entire line.
+echo
+let "val = 10*10"		# original code's value for val did not
+				# created the desired value. Used let 
+				# command to create the arithmetic value
+				# for val.
+echo "10 times 10 is $val"
+echo
+echo "The third positional parameter is set to: $2"
+echo
+cat frog.txt 2>/dev/null
+if (( $? == 1 ))		# original code had 1 listed for success. 
+				# changed resulting if statement to make
+				# logical sense. 
+then
+    echo 'cat frog.txt failed'
+fi
+echo
+echo "Enter your name: "
+read name
+echo "Your name is $name"	# original code had single (strong) quotes
+				# changed to double quotes to allow the 
+				# variable expansion to occur.
+echo
+name=Frank
+if (( $name == "Frank" ))	# original test statement did not have
+				# the second = to allow for the string
+				# test. the other = was added.
+then
+    echo 'My name is Frank because $name' " is $name"
+fi
+echo
+# Printing 1 through 5
+i=0
+while (( i < 6 ))		# orignal code only allowed for counting
+				# up to 4. The comments specify counting
+				# to five, so the test value was changed
+				# to less than or eq to 6.
+do
+    echo $i
+    let i+=1
+done
+echo
+echo "Enter your age: "
+read age
+if (( $age >= 50 ))		# original code lacked $ in front of age
+				# variable. added the $ to age throughout
+				# the if statement.
+then
+    echo "You are 50 or older"
+elif (( $age >= 40 ))
+then
+    echo "You are 40 or older"
+elif (( $age > 30 ))
+then
+    echo "You are 30 or older"
+elif (( $age >= 20 ))
+then
+    echo "You are 20 or older"
+elif (( $age >= 10 ))
+then
+    echo "You are 10 or older"
+fi
+# Checking for blue
+for color in "red" "yellow" "green" "blue" "black" ;
+do
+    if [[ $color == $blue ]]
+    then
+        echo "I found blue!"
+        break
+    fi
+done
+echo
+
