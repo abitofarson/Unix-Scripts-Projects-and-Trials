@@ -1,0 +1,71 @@
+#! /bin/csh
+set status = 0
+# Script Name: p8_s1.sh
+#
+#-----------------
+#R09_000_587258
+#ewichman
+#-----------------
+#
+# A C Shell time clock for the hourly worker
+#
+# The Menu will be printed for the user at the beginning when the script is executed
+# It will be printed again, after a selection is made and that selection is executed
+# Undefined menu selections shall print out an error and then reprint the menu
+#
+# R08_001 Each log contains the date and time of log, name of user and the Clock In/Out status
+# R08_002 Date and Time are formated to output as YYY-MM-DD HH:MM:SS
+# The first while statement keeps the Menu printing with the selections available
+# for the user.
+# The cat command prints the Time Clock Menu.
+# The switch takes the user's selection and executes the commands associated with 
+# that selection.
+#
+while (1)
+	cat << DONE
+	----------------
+	TIME CLOCK MENU
+	----------------
+	1  Clock In
+	2  Clock Out
+	3  Print Log
+	4  Print User
+	5  Quit
+	DONE 		# End Menu
+	echo -n "Selection? "
+	set selection = $<
+	switch ("$selection")
+	case 1:		# R08_003 Clock in Format is specified.
+			# Date, User and Clock IN sent to timeclock.txt
+		echo `date "+%F %T"` >> timeclock.txt
+		echo $user >> timeclock.txt
+		echo CLOCK IN >> timeclock.txt
+		breaksw
+	case 2:		# R08_004 Clock out Format is specified. 
+			# Date, User and Clock OUT sent to timeclock.txt
+		echo `date "+%F %T"` >> timeclock.txt
+		echo $user >> timeclock.txt
+		echo CLOCK OUT >> timeclock.txt
+		breaksw
+	case 3:		# Allows the user to read the entirety of the log.
+			# User can scroll up or down throughout the log.
+		less timeclock.txt 	
+		breaksw
+	case 4:
+		echo -n "Please enter the user ID: "
+		set userID = $<
+		if { ( grep $userID timeclock.txt ) } then
+			grep -p $userID timeclock.txt		#need to alter to make it only Clock In
+		breaksw
+	case 5: 	# This breaks the user from the switch. 
+			# It then prints the goodbye lines to the screen
+			# before the script exits.
+		break
+	default:
+		echo $selection is not a choice. 
+		echo Please make a selection from the following numbered options:
+	endsw
+end
+echo Thank you!
+echo Enjoy your day!
+exit 0 
