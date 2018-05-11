@@ -1,0 +1,89 @@
+#! /bin/bash
+# Converts a capitalized English text string into Morse Code.
+# -----------------
+# R12_002_587259
+# /home/students/ewichman
+# -----------------
+# The script requires a string. The below command ensures the user
+# enters a string.
+
+shopt -s extglob
+IFS=","
+
+# The above command ensures the user inputs a string after the 
+# script name
+
+
+phrase=$1
+
+if (( $# > 1 ))
+then
+	echo "Incorrect number of parameters."
+	exit 2 
+else
+	:
+fi
+# ----------------- 
+# /home/students/ewichman
+# R12_003_587259
+# -----------------
+# The above if statement checks to see whether the string entered as a 
+# positional parameter for the script consists of Captial letters and
+# numbers. If it does not, the script reminds the user to enter a string
+# and exits with a non-zero exit status
+
+# -----------------
+# /home/students/ewichman
+# R12_004_587259
+# -----------------
+# The associative array below has the list of all captialized letters and
+# a list of numbers allowed with their Morse Code equivalient.
+
+declare -A morse
+morse=( 
+[A]=.- 
+[B]=-... 
+[C]=-.-. 
+[D]=-.. 
+[E]=. 
+[F]=..-. 
+[G]=--. 
+[H]=.... 
+[I]=.. 
+[J]=.--- 
+[K]=-.- 
+[L]=.-.. 
+[M]=-- 
+[N]=-. 
+[O]=--- 
+[P]=.--. 
+[Q]=--.- 
+[R]=.-. 
+[S]=... 
+[T]=- 
+[U]=..- 
+[V]=...- 
+[W]=.--  
+[X]=-..- 
+[Y]=-.-- 
+[Z]=--.. 
+[1]=.---- 
+[2]=..--- 
+[3]=...-- 
+[4]=....- 
+[5]=..... 
+[6]=-.... 
+[7]=--... 
+[8]=---.. 
+[9]=----. 
+[0]=----- 
+[" "]=SP )
+
+for (( i = 0; $i < ${#phrase}; i++ ));
+do 
+	echo -n ${morse[${phrase:i:1}]}
+	echo -n ","
+done
+echo EOT
+
+
