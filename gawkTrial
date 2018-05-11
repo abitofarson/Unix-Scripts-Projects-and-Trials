@@ -1,0 +1,58 @@
+#! /bin/gawk
+#
+# Project 10: Word Count awk Script
+# Libby Wichman
+#
+#
+#
+
+BEGIN{
+printf "%-5s\t\t%20s\n", "Index", "Word Count" 
+printf "%s\n", "         1         2         3         4"
+printf "%s\n", "1234567890123456789012345678901234567890"
+}
+
+
+
+{print tolower($0)} 
+# -----------------
+# R10_001_587259
+# -----------------
+# The above awk command converts each record read to all lower case letters.
+# This may have to be tweaked because the requirements say this must be 
+# done prior to the words being counted. 
+# I know not to do it in the BEGIN block, as it is only executed once.
+
+{
+for (f = 1; f <= NF; f++ ){
+	for (i = 1; i <= NF; i++ )
+		{uniquewords["$i"] }
+	}
+}
+# -----------------
+# R10_002_587259
+# -----------------
+# The above treats all words as unique if they do not match exactly.
+# -----------------
+# R10_003_587259
+# -----------------
+# The above puts all the unique words into an associative array that
+# counts the number of instances of those words.
+
+asorti(uniquewords)
+# -----------------
+# R10_004_587259
+# -----------------
+# The above fuction sorts the associative array called unique words.
+
+END{
+for( i in uniquewords){
+printf "%-5s%20s%6d\n", i, i, uniquewords[i]
+} 
+}
+
+# ----------------- 
+# R10_005_587259
+# -----------------
+# I need to correct the format? maybe the array itself.
+
