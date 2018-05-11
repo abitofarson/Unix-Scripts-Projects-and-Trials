@@ -1,0 +1,97 @@
+#! /bin/awk -f
+# Project #9 Awk Weather Script
+# Libby Wichman
+# p9_s1.awk
+
+BEGIN{
+FS=","
+max=50
+min=100
+hsnow=12
+ssnow=null
+}
+{
+if ( $1 == Missouri ) {
+	printf "%s %s %s\n", $1, $6, $7
+	}
+}
+# The above find the state of Missouri in the file
+# and prints the State Name (field 1), the Date 
+# (field 6) and the location (field 7) of the 
+# record
+# R09_001_587259
+
+{
+while ( $1 == Kansas ) {	
+	while ( $2 ~ /Temperature/ ){
+		if ( $2 ~ /Maximum/ ){
+			max=$4
+			}
+		else if ( $2 ~ /Minimum/ ){
+			min=$4
+			}
+		printf "%s %f\n", $1, min-max;
+		}
+}
+
+# The above find records for Kansas Temperatures. 
+# The first if finds records with the Maximum temperature
+# and places the temperature value into max. The else if
+# finds the Kansas records with the Minimum temperature
+# and places the temperature value into min. Output is 
+# printed as the State first, then the difference of the
+# minimum temperature and the maximum termperature.
+# R09_002_587259
+
+{
+if ( $1 == California ){
+	if ( $2 ~ /Snowfall/ ){
+		printf "%s %f\n", $1, $4;
+		if ( $4 > hsnow ){
+			hsnow=$4
+			ssnow=$1
+			}
+		}
+	}
+if ( $1 == Colorado ){
+	if ( $2 ~ /Snowfall/ ){
+		printf "%s %f\n", $1, $4;
+		if ( $4 > hsnow ){
+			hsnow=$4
+			ssnow=$1
+			}
+		}
+	}
+if ( $1 == Vermont ){
+	if ( $2 ~ /Snowfall/ ){
+		printf "%s %f\n", $1, $4;
+		if ( $4 > hsnow ){
+			hsnow=$4
+			ssnow=$1
+			}
+		}
+	}
+if ( $1 == Wyoming ){
+	if ( $2 ~ /Snowfall/ ){
+		printf "%s %f\n", $1, $4;
+		if ( $4 > hsnow ){
+			hsnow=$4
+			ssnow=$1
+			}
+		}
+	}
+printf "Maximum Snowfall: %s %f\n", ssnow, hsnow;
+}
+# The above looks for the states of California, Colorado,
+# Vermont and Wyoming. For each it prints the state and the 
+# record Snowfall. Out of all of the states, the one with the 
+# highest records snowfall is printed. 
+# R09_003_587259
+# 
+# The below finds records referencing wind and prints
+# the entire record.
+# R09_004_587259
+
+{
+if ( $2 ~ /Wind/ ){print $0}
+}
